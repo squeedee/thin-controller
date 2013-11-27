@@ -7,7 +7,7 @@ require 'thin_controller/version'
 Gem::Specification.new do |spec|
   spec.name          = 'thin-controller'
   spec.version       = ThinController::VERSION
-  spec.authors       = ['Rasheed Abdu-Aziz']
+  spec.authors       = ['Rasheed Abdul-Aziz']
   spec.email         = %w(squeedee@gmail.com)
   spec.description   = %q{Gem to stub out controllers and use the command pattern instead}
   spec.summary       = %q{Gem to stub out controllers and use the command pattern instead}
@@ -23,4 +23,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'bundler', '~> 1.3'
   spec.add_development_dependency 'rake'
+  spec.add_development_dependency 'rails', '~> 4.0.0'
+  spec.add_development_dependency 'rspec'
+  spec.add_development_dependency 'simple_bdd'
 end

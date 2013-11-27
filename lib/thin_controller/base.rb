@@ -1,23 +1,25 @@
 module ThinController
   module Base
     def method_for_action(action_name)
-      if command_exists?(action_name)
+      command = find_command(action_name)
+      return super unless command
 
-        class_eval "
-                   def #{action_name}
-                      puts 'omfg'
-                     head :ok
-                   end
-                 "
-        action_name
-      else
-        super
-      end
+      build_command_proxy(action_name, command)
+      action_name
     end
 
     private
-    def command_exists?(action)
-      true
+
+    def build_command_proxy(action_name, command_constant)
+      class_eval <<-CLASS
+          def #{action_name}
+            command = #{command_constant}.new(params,request)
+          end
+      CLASS
+    end
+
+    def find_command(action_name)
+
     end
 
   end
