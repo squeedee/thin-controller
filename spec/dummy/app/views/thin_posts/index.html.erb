@@ -1,0 +1,29 @@
+<h1>Listing thin posts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @thin_posts.each do |thin_post| %>
+      <tr>
+        <td><%= thin_post.title %></td>
+        <td><%= thin_post.body %></td>
+        <td><%= link_to 'Show', thin_post %></td>
+        <td><%= link_to 'Edit', edit_thin_post_path(thin_post) %></td>
+        <td><%= link_to 'Destroy', thin_post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Thin post', new_thin_post_path %>

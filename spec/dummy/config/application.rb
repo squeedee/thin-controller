@@ -6,6 +6,10 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env)
 
+# TODO I've added this here because I dont know how to test Railtie
+# initializers and other way - a normal app wouldnt need this
+require 'thin_controller'
+
 module Dummy
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
