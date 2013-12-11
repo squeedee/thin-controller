@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95675065-d06f-4234-96ed-7418280568d3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/thin_controller/base.rb" afterPath="$PROJECT_DIR$/lib/thin_controller/base.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/thin_controller/controller_definitions.rb" afterPath="$PROJECT_DIR$/lib/thin_controller/controller_definitions.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/thin_controller/controller_definitions_spec.rb" afterPath="$PROJECT_DIR$/spec/thin_controller/controller_definitions_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/feature_spec_helper.rb" afterPath="$PROJECT_DIR$/spec/feature_spec_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/dummy/config/routes.rb" afterPath="$PROJECT_DIR$/spec/dummy/config/routes.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/thin_controller/command.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/thin_controller/command/has_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/thin_controller/command/has_controller_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/thin_controller/command/base.rb" afterPath="$PROJECT_DIR$/lib/thin_controller/command/base.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/thin_controller/command/base_spec.rb" afterPath="$PROJECT_DIR$/spec/thin_controller/command/base_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/thin-controller.iml" afterPath="$PROJECT_DIR$/.idea/thin-controller.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/thin_controller.rb" afterPath="$PROJECT_DIR$/lib/thin_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="thin-controller.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,7 +21,8 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/thin-controller@Run_spec__base_spec___thin_controller.coverage" NAME="Run spec 'base_spec': thin-controller Coverage Results" MODIFIED="1386650839867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="thin-controller" />
+    <SUITE FILE_PATH="coverage/thin-controller@Run_spec__base_spec___thin_controller.coverage" NAME="Run spec 'base_spec': thin-controller Coverage Results" MODIFIED="1386943931036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="thin-controller" />
+    <SUITE FILE_PATH="coverage/thin-controller@Base__thin_controller.coverage" NAME="Base: thin-controller Coverage Results" MODIFIED="1386769771875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="thin-controller" />
     <SUITE FILE_PATH="coverage/thin-controller@controller_definitions.coverage" NAME="controller_definitions Coverage Results" MODIFIED="1386685273748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib/thin_controller" MODULE_NAME="thin-controller" />
     <SUITE FILE_PATH="coverage/thin-controller@Run_spec__controller_definitions_spec___thin_controller.coverage" NAME="Run spec 'controller_definitions_spec': thin-controller Coverage Results" MODIFIED="1386699949800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="thin-controller" />
     <SUITE FILE_PATH="coverage/thin-controller@railtie.coverage" NAME="railtie Coverage Results" MODIFIED="1386644808700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib/thin_controller" MODULE_NAME="thin-controller" />
@@ -35,16 +37,18 @@
     <SUITE FILE_PATH="coverage/thin-controller@ControllerDefinitions_resources_are_mapped__thin_controller.coverage" NAME="ControllerDefinitions resources are mapped: thin-controller Coverage Results" MODIFIED="1386699202341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="thin-controller" />
     <SUITE FILE_PATH="coverage/thin-controller@Base_build_controller_creates_a_child_of_Base_as_a_nested_constant__thin_controller.coverage" NAME="Base.build_controller creates a child of Base as a nested constant: thin-controller Coverage Results" MODIFIED="1386650271909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="thin-controller" />
     <SUITE FILE_PATH="coverage/thin-controller@Base_build_controller_creates_a_child_of_Base_as_a_root_constant__thin_controller.coverage" NAME="Base.build_controller creates a child of Base as a root constant: thin-controller Coverage Results" MODIFIED="1386649506250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="thin-controller" />
+    <SUITE FILE_PATH="coverage/thin-controller@Base_command_instance_without_execute_redefined__thin_controller.coverage" NAME="Base command instance without execute redefined: thin-controller Coverage Results" MODIFIED="1386873722433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="thin-controller" />
     <SUITE FILE_PATH="coverage/thin-controller@Run_spec__posts_controller_spec___thin_controller.coverage" NAME="Run spec 'posts_controller_spec': thin-controller Coverage Results" MODIFIED="1386645105624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="thin-controller" />
     <SUITE FILE_PATH="coverage/thin-controller@Common_Controller_behaviours_Creating_a_post__thin_controller.coverage" NAME="Common Controller behaviours Creating a post: thin-controller Coverage Results" MODIFIED="1386352214090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="thin-controller" />
-    <SUITE FILE_PATH="coverage/thin-controller@Thin_Controller_behaviours_With_no__thin__posts__thin_controller.coverage" NAME="Thin Controller behaviours With no (thin) posts: thin-controller Coverage Results" MODIFIED="1386453086734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="thin-controller" />
     <SUITE FILE_PATH="coverage/thin-controller@thin_controller.coverage" NAME="thin_controller Coverage Results" MODIFIED="1386352588462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="thin-controller" />
+    <SUITE FILE_PATH="coverage/thin-controller@Thin_Controller_behaviours_With_no__thin__posts__thin_controller.coverage" NAME="Thin Controller behaviours With no (thin) posts: thin-controller Coverage Results" MODIFIED="1386453086734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="thin-controller" />
     <SUITE FILE_PATH="coverage/thin-controller@Common_Thin_Controller_behaviours__thin_controller.coverage" NAME="Common Thin Controller behaviours: thin-controller Coverage Results" MODIFIED="1386353586811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="thin-controller" />
     <SUITE FILE_PATH="coverage/thin-controller@All_specs_in_features__thin_controller.coverage" NAME="All specs in features: thin-controller Coverage Results" MODIFIED="1386645065720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="thin-controller" />
     <SUITE FILE_PATH="coverage/thin-controller@Can_see_a_list_of_posts__thin_controller__1_.coverage" NAME="Can see a list of posts: thin-controller (1) Coverage Results" MODIFIED="1386352132395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="thin-controller" />
     <SUITE FILE_PATH="coverage/thin-controller@Common_Controller_behaviours_With_no_posts__thin_controller.coverage" NAME="Common Controller behaviours With no posts: thin-controller Coverage Results" MODIFIED="1386352604399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="thin-controller" />
-    <SUITE FILE_PATH="coverage/thin-controller@All_specs_in_spec__thin_controller.coverage" NAME="All specs in spec: thin-controller Coverage Results" MODIFIED="1386700252865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="thin-controller" />
+    <SUITE FILE_PATH="coverage/thin-controller@Base__thin_controller__1_.coverage" NAME="Base: thin-controller (1) Coverage Results" MODIFIED="1386943950890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="thin-controller" />
     <SUITE FILE_PATH="coverage/thin-controller@All_specs_in_thin_controller__thin_controller.coverage" NAME="All specs in thin_controller: thin-controller Coverage Results" MODIFIED="1386643847504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="thin-controller" />
+    <SUITE FILE_PATH="coverage/thin-controller@All_specs_in_spec__thin_controller.coverage" NAME="All specs in spec: thin-controller Coverage Results" MODIFIED="1386802224477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="thin-controller" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -57,61 +61,89 @@
     <favorites_list name="thin-controller" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="thin_posts_controller_spec.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/spec/features/thin_posts_controller_spec.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="10" column="25" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1045">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="controller_definitions.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/thin_controller/controller_definitions.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="32" column="6" selection-start="753" selection-end="753" vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="969">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="base.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lib/thin_controller/base.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="17" column="59" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="base_spec.rb" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/spec/thin_controller/base_spec.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="30" column="52" selection-start="922" selection-end="922" vertical-scroll-proportion="0.6984127" vertical-offset="42" max-vertical-offset="798">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="controller_definitions_spec.rb" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/spec/thin_controller/controller_definitions_spec.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="29" column="0" selection-start="910" selection-end="910" vertical-scroll-proportion="0.728836" vertical-offset="0" max-vertical-offset="1064">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/dummy/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="266">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/thin_controller/base_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="50" selection-start="790" selection-end="790" vertical-scroll-proportion="0.0" vertical-offset="494" max-vertical-offset="741">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/thin_controller/base.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="4" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_command.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/dummy/app/controllers/thin_posts/index_command.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="17" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="494">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/thin_controller/command/base.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="6" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="has_controller_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/thin_controller/command/has_controller_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="0" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base_spec.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/thin_controller/command/base_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="84" selection-end="84" vertical-scroll-proportion="0.13118526" vertical-offset="0" max-vertical-offset="869">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="has_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/thin_controller/command/has_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="0" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="posts_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/dummy/app/controllers/posts_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="0" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="1159">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -150,15 +182,21 @@
         <option value="$PROJECT_DIR$/thin_controller.gemspec" />
         <option value="$PROJECT_DIR$/spec/thin_controller/railtie_spec.rb" />
         <option value="$PROJECT_DIR$/lib/thin_controller/railtie.rb" />
-        <option value="$PROJECT_DIR$/lib/thin_controller.rb" />
         <option value="$PROJECT_DIR$/spec/dummy/Gemfile" />
         <option value="$PROJECT_DIR$/spec/dummy/config/application.rb" />
         <option value="$PROJECT_DIR$/spec/feature_spec_helper.rb" />
         <option value="$PROJECT_DIR$/spec/dummy/config/routes.rb" />
         <option value="$PROJECT_DIR$/spec/thin_controller/controller_definitions_spec.rb" />
         <option value="$PROJECT_DIR$/lib/thin_controller/controller_definitions.rb" />
-        <option value="$PROJECT_DIR$/spec/thin_controller/base_spec.rb" />
         <option value="$PROJECT_DIR$/lib/thin_controller/base.rb" />
+        <option value="$PROJECT_DIR$/spec/thin_controller/base_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/dummy/app/controllers/thin_posts/index_command.rb" />
+        <option value="$PROJECT_DIR$/lib/thin_controller.rb" />
+        <option value="$PROJECT_DIR$/lib/thin_controller/command.rb" />
+        <option value="$PROJECT_DIR$/lib/thin_controller/command/has_controller.rb" />
+        <option value="$PROJECT_DIR$/spec/thin_controller/command/has_controller_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/thin_controller/command/base_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/thin_controller/command/base.rb" />
       </list>
     </option>
   </component>
@@ -170,8 +208,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-3" />
-    <option name="y" value="24" />
+    <option name="y" value="22" />
     <option name="width" value="2560" />
     <option name="height" value="1414" />
   </component>
@@ -201,7 +238,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -266,25 +302,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="features" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thin-controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thin-controller" />
+              <option name="myItemId" value="thin_controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dummy" />
+              <option name="myItemId" value="command" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -320,8 +342,31 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thin-controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thin-controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thin_controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="command" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -336,6 +381,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="LayoutCode.rearrangeEntriesRuby" value="false" />
+    <property name="SearchEverywhereHistory" value="(:payload)" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -346,139 +392,7 @@
       <recent name="$PROJECT_DIR$/spec/dummy/app/views" />
     </key>
   </component>
-  <component name="RunManager" selected="RSpec.All specs in spec: thin-controller">
-    <configuration default="false" name="All specs in spec: thin-controller" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <log_file path="$MODULE_DIR$/spec/dummy/log/test.log" checked="true" skipped="true" show_all="false" alias="dummy test log" />
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="thin-controller" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$MODULE_DIR$/spec" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="ALL_IN_FOLDER" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <RunnerSettings RunnerId="RubyDebugRunner" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ControllerDefinitions resources are mapped: thin-controller" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <log_file path="$MODULE_DIR$/spec/dummy/log/test.log" checked="true" skipped="true" show_all="false" alias="dummy test log" />
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="thin-controller" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/thin_controller/controller_definitions_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="ControllerDefinitions resources are mapped" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="feature_spec_helper" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
-      <module name="thin-controller" />
-      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/spec" />
-      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/feature_spec_helper.rb" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ControllerDefinitions resources are mapped nested controllers: thin-controller" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <log_file path="$MODULE_DIR$/spec/dummy/log/test.log" checked="true" skipped="true" show_all="false" alias="dummy test log" />
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="thin-controller" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/thin_controller/controller_definitions_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="ControllerDefinitions resources are mapped nested controllers" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="RSpec.Base: thin-controller (1)">
     <configuration default="false" name="Run spec 'controller_definitions_spec': thin-controller" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <log_file path="$MODULE_DIR$/spec/dummy/log/test.log" checked="true" skipped="true" show_all="false" alias="dummy test log" />
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
@@ -504,6 +418,158 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Base: thin-controller" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <log_file path="$MODULE_DIR$/spec/dummy/log/test.log" checked="true" skipped="true" show_all="false" alias="dummy test log" />
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="thin-controller" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/thin_controller/base_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Base" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyCover" />
+      <RunnerSettings RunnerId="RubyDebugRunner" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyCover" />
+      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Base command instance without execute redefined: thin-controller" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <log_file path="$MODULE_DIR$/spec/dummy/log/test.log" checked="true" skipped="true" show_all="false" alias="dummy test log" />
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="thin-controller" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/thin_controller/command/has_controller_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Base command instance without execute redefined" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyDebugRunner" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Run spec 'base_spec': thin-controller" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <log_file path="$MODULE_DIR$/spec/dummy/log/test.log" checked="true" skipped="true" show_all="false" alias="dummy test log" />
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="thin-controller" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/thin_controller/command/has_controller_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyDebugRunner" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Base: thin-controller (1)" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <log_file path="$MODULE_DIR$/spec/dummy/log/test.log" checked="true" skipped="true" show_all="false" alias="dummy test log" />
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="thin-controller" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/thin_controller/command/base_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Base" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -777,19 +843,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="RSpec.All specs in spec: thin-controller" />
-      <item index="1" class="java.lang.String" itemvalue="RSpec.ControllerDefinitions resources are mapped: thin-controller" />
-      <item index="2" class="java.lang.String" itemvalue="Ruby.feature_spec_helper" />
-      <item index="3" class="java.lang.String" itemvalue="RSpec.ControllerDefinitions resources are mapped nested controllers: thin-controller" />
-      <item index="4" class="java.lang.String" itemvalue="RSpec.Run spec 'controller_definitions_spec': thin-controller" />
+      <item index="0" class="java.lang.String" itemvalue="RSpec.Run spec 'controller_definitions_spec': thin-controller" />
+      <item index="1" class="java.lang.String" itemvalue="RSpec.Base: thin-controller" />
+      <item index="2" class="java.lang.String" itemvalue="RSpec.Base command instance without execute redefined: thin-controller" />
+      <item index="3" class="java.lang.String" itemvalue="RSpec.Run spec 'base_spec': thin-controller" />
+      <item index="4" class="java.lang.String" itemvalue="RSpec.Base: thin-controller (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.All specs in spec: thin-controller" />
-        <item index="1" class="java.lang.String" itemvalue="RSpec.Run spec 'controller_definitions_spec': thin-controller" />
-        <item index="2" class="java.lang.String" itemvalue="RSpec.ControllerDefinitions resources are mapped nested controllers: thin-controller" />
-        <item index="3" class="java.lang.String" itemvalue="Ruby.feature_spec_helper" />
-        <item index="4" class="java.lang.String" itemvalue="RSpec.ControllerDefinitions resources are mapped: thin-controller" />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.Base: thin-controller (1)" />
+        <item index="1" class="java.lang.String" itemvalue="RSpec.Run spec 'base_spec': thin-controller" />
+        <item index="2" class="java.lang.String" itemvalue="RSpec.Base command instance without execute redefined: thin-controller" />
+        <item index="3" class="java.lang.String" itemvalue="RSpec.Base: thin-controller" />
+        <item index="4" class="java.lang.String" itemvalue="RSpec.Run spec 'controller_definitions_spec': thin-controller" />
       </list>
     </recent_temporary>
   </component>
@@ -820,28 +886,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="24" width="2560" height="1414" extended-state="6" />
+    <frame x="0" y="22" width="2560" height="1414" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32948717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20810167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39712557" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21683876" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39636913" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32692307" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3237519" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3214826" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992327" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -862,49 +928,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/thin_controller/base_spec.rb</url>
-          <line>30</line>
-          <option name="timeStamp" value="10" />
+          <line>27</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="11" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="19" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spec/features/posts_controller_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="3" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thin_controller.gemspec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="5" selection-start="1024" selection-end="1024" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="660" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/dummy/app/controllers/posts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="18" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1200" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/dummy/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="6" selection-start="456" selection-end="456" vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="330" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/dummy/config.ru">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="30" selection-end="30" vertical-scroll-proportion="0.022144523" vertical-offset="0" max-vertical-offset="858" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/dummy/app/assets/stylesheets/scaffolds.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1425" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/dummy/app/views/posts/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="8" selection-start="292" selection-end="292" vertical-scroll-proportion="0.42537314" vertical-offset="0" max-vertical-offset="804" />
@@ -958,11 +992,6 @@
     <entry file="file://$PROJECT_DIR$/spec/dummy/app/models/thin_post.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="472" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/dummy/app/controllers/posts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="0" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/dummy/app/helpers/application_helper.rb">
@@ -1047,110 +1076,152 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/thin_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="135" selection-end="135" vertical-scroll-proportion="0.06635623" vertical-offset="0" max-vertical-offset="859" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/dummy/app/views/thin_posts/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="19" selection-start="96" selection-end="96" vertical-scroll-proportion="0.13555291" vertical-offset="0" max-vertical-offset="841" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/thin_controller/railtie.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-          <folding />
-        </state>
+        <state line="3" column="0" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/thin_controller/application_extension.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="882">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@thin-controller/gems/activesupport-4.0.0/lib/active_support/core_ext/string/inflections.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="14" selection-start="3695" selection-end="3696" vertical-scroll-proportion="0.51632404" vertical-offset="1226" max-vertical-offset="4142">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@thin-controller/gems/activesupport-4.0.0/lib/active_support/inflector.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="24" selection-start="246" selection-end="246" vertical-scroll-proportion="0.10969977" vertical-offset="0" max-vertical-offset="866">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="882" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/dummy/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="12" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
-          <folding />
-        </state>
+        <state line="5" column="12" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/dummy/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="146" selection-end="146" vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="380">
-          <folding />
-        </state>
+        <state line="5" column="0" selection-start="146" selection-end="146" vertical-scroll-proportion="-3.392857" vertical-offset="0" max-vertical-offset="380" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/dummy/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="2" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
-          <folding />
-        </state>
+        <state line="11" column="2" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/feature_spec_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="912">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/thin_controller/controller_definitions_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="910" selection-end="910" vertical-scroll-proportion="0.728836" vertical-offset="0" max-vertical-offset="1064">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/dummy/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="23" selection-start="150" selection-end="150" vertical-scroll-proportion="0.13163972" vertical-offset="0" max-vertical-offset="866">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/thin_posts_controller_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="25" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1045">
-          <folding />
-        </state>
+        <state line="2" column="0" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="912" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/thin_controller/controller_definitions.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="6" selection-start="753" selection-end="753" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
+        <state line="32" column="6" selection-start="753" selection-end="753" vertical-scroll-proportion="0.7412224" vertical-offset="38" max-vertical-offset="969" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/features/thin_posts_controller_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="25" selection-start="268" selection-end="268" vertical-scroll-proportion="0.24707413" vertical-offset="0" max-vertical-offset="1045" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/thin_controller/controller_definitions_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="910" selection-end="910" vertical-scroll-proportion="0.71651495" vertical-offset="0" max-vertical-offset="1064" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/dummy/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="266">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/thin_controller/base.rb">
+    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs20/class.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="59" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950">
+        <state line="119" column="13" selection-start="3850" selection-end="3850" vertical-scroll-proportion="0.32119635" vertical-offset="2014" max-vertical-offset="3249">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/thin_controller/base_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="52" selection-start="922" selection-end="922" vertical-scroll-proportion="0.6984127" vertical-offset="42" max-vertical-offset="798">
+        <state line="26" column="50" selection-start="790" selection-end="790" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/dummy/app/controllers/posts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/dummy/app/controllers/thin_posts/index_command.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="17" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs20/basic_object.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="215" column="14" selection-start="7672" selection-end="7672" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/dummy/app/views/thin_posts/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="177" selection-end="177" vertical-scroll-proportion="0.21011059" vertical-offset="0" max-vertical-offset="1266">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/thin_controller/base.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="4" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/thin_controller/command.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="49" selection-end="49" vertical-scroll-proportion="0.021864211" vertical-offset="0" max-vertical-offset="869">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/thin_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="32" selection-start="114" selection-end="114" vertical-scroll-proportion="0.043728422" vertical-offset="0" max-vertical-offset="869">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@thin-controller/gems/rspec-core-2.14.7/lib/rspec/core/memoized_helpers.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="198" column="0" selection-start="6885" selection-end="6885" vertical-scroll-proportion="0.19783616" vertical-offset="3506" max-vertical-offset="9880">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/thin_controller/command/has_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/thin_controller/command/has_controller_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="0" selection-end="92" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/thin_controller/command/base.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="6" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/thin_controller/command/base_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="84" selection-end="84" vertical-scroll-proportion="0.13118526" vertical-offset="0" max-vertical-offset="869">
           <folding />
         </state>
       </provider>

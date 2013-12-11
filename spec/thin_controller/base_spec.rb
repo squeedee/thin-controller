@@ -25,10 +25,7 @@ module ThinController
 
         specify 'is the new controller class' do
           expect(new_controller).to equal Hey::There::SomeOtherController
-        end
-
-        specify 'is a subclass of Base' do
-          expect(new_controller).to be_a_kind_of(Base)
+          expect(new_controller.superclass).to eql(Base)
         end
       end
     end
