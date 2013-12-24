@@ -2,18 +2,20 @@ require 'action_controller'
 
 module ThinController
   class Base < ActionController::Base
+    abstract!
+
     def self.build_controller(namespaced_controller_name)
-      names = namespaced_controller_name.split("::")
+      names = namespaced_controller_name.split('::')
 
       controller_name = names.pop
 
       namespace = build_namespace(names)
-
       namespace.const_set(controller_name, Class.new(self))
     end
 
     private
 
+    # FIXME move out
     def self.build_namespace(names)
       names.inject(Object) do |namespace_memo, name|
         if namespace_memo.const_defined?(name)

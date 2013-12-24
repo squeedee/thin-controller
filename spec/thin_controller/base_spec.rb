@@ -2,6 +2,32 @@ require 'spec_helper'
 
 module ThinController
   describe Base do
+
+    describe 'adding_methods' do
+      let(:action_command) { double(:action_command) }
+
+      subject(:controller) { Base.build_controller('SomeController') }
+
+      before do
+        stub_const('SomeController::AnAction', Class.new())
+
+        allow(SomeController::AnAction).
+          to receive(:new).
+          with(controller).
+          and_return(action_command)
+
+        allow(action_command).
+          to receive(:execute)
+      end
+
+      specify do
+        controller.an_action
+
+        expect(action_command).
+          to have_received(:execute)
+      end
+    end
+
     describe '.build_controller' do
       specify 'as a root constant' do
         expect { SomeController }.to raise_exception()
